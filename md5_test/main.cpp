@@ -183,10 +183,20 @@ int main(int argc, char *argv[]) {
   const std::string data_str3 = "$d1$e1$getlastmonthagg";
   const std::string data_str4 = "$d1$e1$get\0lastmonthagg";
 
+  std::cout << "=================================\n";
+  std::cout << "$d1$e1$getdataforrange\n";
+  std::cout << "=================================\n";
+  testMD5(data_str1, 0);
+  std::cout << "---------------------------------\n";
+  testMD5(data_str1, 0);
+  std::cout << "=================================\n";
+
+  std::cout << "=================================\n";
+  std::cout << "$d1$e1$get\\0lastmonthagg\n";
   std::cout << "---------------------------------\n";
   testMD5(data_str4, 0);
   std::cout << "---------------------------------\n";
   testMD5(data_str4, 0);
-  std::cout << "---------------------------------\n";
+  std::cout << "=================================\n";
   return 0;
 }
