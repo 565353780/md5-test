@@ -1,5 +1,11 @@
 # MD5 Test
 
+## Build and Run
+
+```bash
+./ezrun.sh
+```
+
 ## Build
 
 ```bash
