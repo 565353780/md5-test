@@ -22,7 +22,7 @@ int sourceGetMD5(const char* data, unsigned char *md5, const int &mode) {
   return 0;
 }
 
-std::string getMD5(const unsigned char* data, const int &data_size, const int &mode=0) {
+std::string getMD5(const unsigned char* data, const int &data_size, const int &mode=1) {
   unsigned char md5[MD5_DIGEST_LENGTH];
 
   if (mode == 0) {
